@@ -1,0 +1,29 @@
+<!Doctype html>
+<html lang="de-DE">
+    <head>
+        <meta charset="uf-8"/>
+        <meta name="viewport" content="width=device-width">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h1 id="top">Hallo...</h1>
+        <input type="number" id="zahl1">
+        <input type="number" id="zahl2">
+        <button type="button" id="myButton" onclick="hochrechnen();">Rechnen</button>
+
+        <script>
+            document.getElementById("myButton").onclick = function (){
+                var zahl1 = document.getElementById("zahl1").value;
+                var zahl2 = document.getElementById("zahl2").value;
+                addieren(zahl1,zahl2);
+            }
+
+            function addieren (parameter1, parameter2){
+                parameter1 = parseInt(parameter1);
+                parameter2 = parseInt(parameter2);
+                console.log (parameter1+parameter2);
+            }        </script>
+
+            addieren(15,25);
+    </body>
+</html>
