@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays in Javascript</title>
+
+</head>
+<body>
+    <script>
+      var zahlenArray = new Array (0,1,2,3,4,5,6,7,8,9);
+
+      var produkte = new Array ("Galaxy S1", "Galaxy S2", "Galaxy S3", "Galaxy S4", "Galaxy S5");
+      console.log(produkte);
+      var ausgegliedertesProdukt = produkte.pop();
+      console.log(ausgegliedertesProdukt);
+      console.log(produkte.pop());
+
+      produkte.push("Galaxy S6");
+      console.log(produkte);
+      var erstesElement = produkte.shift();
+      console.log(erstesElement);
+      produkte.unshift("Galaxy S7", "Galaxy S8");
+      console.log(produkte);
+      produkte.splice(2,0, "Galaxy S1", "Galaxy S5");
+      console.log(produkte);
+      produkte.sort();
+      console.log(produkte);
+      produkte.splice(1,0, "Galaxy S4");
+      produkte.sort();
+      console.log(produkte);
+    </script>
+</body>
+</html>
