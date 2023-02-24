@@ -15,14 +15,15 @@
             document.getElementById("myButton").onclick = function (){
                 var zahl1 = document.getElementById("zahl1").value;
                 var zahl2 = document.getElementById("zahl2").value;
-                addieren(zahl1,zahl2);
+                var resultat = addieren(zahl1,zahl2);
+                console.log(resultat);
             }
 
             function addieren (parameter1, parameter2){
                 parameter1 = parseInt(parameter1);
                 parameter2 = parseInt(parameter2);
-                console.log (parameter1+parameter2);
-                document.getElementById("top").innerHTML = "Ergebnis ist " + (parameter1+parameter2);
+                var ergebnis = parameter1 + parameter2;
+                return ergebnis;
             }  
             
 
