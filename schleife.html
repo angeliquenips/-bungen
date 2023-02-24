@@ -7,8 +7,35 @@
 
 </head>
 <body>
-    <script type="text/javascript">
-        /*
+    <h1>Hallo ...</h1>
+
+    <script>
+
+        var anzahlAnEintraegen = 0;
+        var gesamtWert = 0;
+        var input = "";
+        var inputNumber;
+        while(input != "0"){
+            input = prompt("Nächste Zahl bitte! Gebe 0 ein um zu beenden!");
+            if(parseInt(input)){
+                inputNumber = parseInt(input);
+            if (inputNumber != 0){
+                gesamtWert += inputNumber;
+                anzahlAnEintraegen++;
+            }
+        }else{
+            document.write("Du hast " + 
+            "etwas anderes als eine Zahl eingegeben!");
+            break;
+        }
+
+        var ergebnis = gesamtWert/anzahlAnEintraegen;
+        document.write ("Der Durchschnitt ist " + ergebnis);
+       
+       
+       
+       
+       /*
             "Eine Schleife ist eine Kontrollstruktur in Programmiersprachen. 
             Sie wiederholt einen Anweisungs-Block den sogenannten 
             Schleifenrumpf oder Schleifenkörper solange die Schleifenbedingung 
@@ -26,7 +53,7 @@
             endrekursive Form umgewandelt werden. 
             Zur Beschleunigung des Programmablaufs werden 
             Schleifen oft durch den Compiler entrollt."
-        */
+        
         
         var zaehlen = 10;
         do{
