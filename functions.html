@@ -9,15 +9,22 @@
         <h1 id="top">Hallo...</h1>
         <input type="number" id="zahl1">
         <input type="number" id="zahl2">
-        <button type="button" id="myButton" onclick="hochrechnen();">Rechnen</button>
+        <input type="text" id="name" placeholder="Dein Name">
+        <button type="button" id="myButton">Rechnen</button>
 
         <script>
-            document.getElementById("myButton").onclick = function (){
+            document.getElementById("myButton").onclick = function(){
                 var zahl1 = document.getElementById("zahl1").value;
                 var zahl2 = document.getElementById("zahl2").value;
                 var resultat = addieren(zahl1,zahl2);
                 console.log(resultat);
                 console.log(returnBeispiel());
+                var gruss= returnName(document.getElementById("name").value)
+                console.log(gruss);
+            }
+
+            function returnName(name){
+                return "Hallo " + name; 
             }
 
             function returnBeispiel(){
