@@ -17,18 +17,16 @@
       console.log(produkte.pop());
 
       produkte.push("Galaxy S6");
-      console.log(produkte);
       var erstesElement = produkte.shift();
-      console.log(erstesElement);
       produkte.unshift("Galaxy S7", "Galaxy S8");
-      console.log(produkte);
       produkte.splice(2,0, "Galaxy S1", "Galaxy S5");
-      console.log(produkte);
       produkte.sort();
-      console.log(produkte);
       produkte.splice(1,0, "Galaxy S4");
       produkte.sort();
+      produkte.reverse();
       console.log(produkte);
+      console.log(produkte.toString());
+      console.log(produkte.join(" * "))
     </script>
 </body>
 </html>
